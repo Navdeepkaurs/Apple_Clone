@@ -1,0 +1,876 @@
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* ************************************************************************ */
+/* navbar css start */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(18, 18, 18, 0.9);
+    padding: 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 4;
+}
+
+.nav-inner-div {
+    margin: 0 2rem 0 2rem;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 27.2px;
+    font-weight: 250;
+    font-size: 0.75rem;
+}
+
+.nav-item {
+    margin-right: 2.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+.apple-logo {
+    font-size: 1.1rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* for reposiveness of the navbar */
+@media (max-width: 830px) {
+    .shop {
+        display: none;
+    }
+
+    .hidden {
+        display: inline;
+        position: absolute;
+        left: 10px;
+        font-size: 2rem;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .nav-bar {
+        flex-direction: row-reverse;
+        padding: 10px;
+        align-items: flex-end;
+        z-index: 3;
+        width: 100%;
+        /*position: fixed;*/
+    }
+
+    .nav-inner-div {
+        margin: 0;
+    }
+
+    .apple-logo {
+        font-size: 1.25rem;
+        opacity: 0.8;
+    }
+
+    .search-logo {
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+
+    .cart-logo {
+        font-size: 1.35rem;
+        opacity: 0.85;
+    }
+
+    .hamburger {
+        display: contents;
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        width: 100%;
+        margin-right: 2rem;
+    }
+}
+
+/* navbar css ends */
+/* ************************************************************************ */
+
+/* ************************************************************************ */
+/* section 1 block css start */
+
+/* offer block css start */
+.offers {
+    background-color: #1d1d1f;
+    color: white;
+    text-align: center;
+    font-weight: 250;
+    font-size: 0.8rem;
+    padding: 0.7rem 0 0.8rem 0;
+}
+
+#offer-a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.83rem;
+}
+
+#offer-a:hover {
+    text-decoration: underline;
+}
+
+/* making it responsive */
+@media (max-width: 830px) {
+    .offers {
+        font-size: 0.8rem;
+        padding: 0.7rem 2.5rem 0.8rem 2.5rem;
+    }
+}
+
+/* offer block css ends */
+
+.section1 {
+    background-color: black;
+    width: 100%;
+    height: 46rem;
+    text-align: center;
+    padding-top: 2.9rem;
+    margin-bottom: 0.7rem;
+}
+
+.section1 h1 {
+    font-size: 3.5rem;
+    font-weight: 540;
+    padding-top: 3rem;
+}
+
+.section1 h2 {
+    padding-top: 0.25rem;
+    font-weight: 350;
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
+}
+
+.section1 a {
+    text-decoration: none;
+    color: #2997ff;
+    font-size: 1.3rem;
+    font-weight: 250;
+}
+
+.sec1-a:hover {
+    text-decoration: underline;
+}
+
+.sec-1-text {
+    position: relative;
+}
+
+.sec-1-img {
+    width: 80%;
+    height: 400px;
+    background-image: url("./assets/sec1-iphone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 14.5rem;
+    right: 1.5rem;
+}
+
+/* text responsiveness */
+@media (max-width: 830px) {
+    .section1 h1 {
+        font-size: 3rem;
+        font-weight: 540;
+        padding-top: 3rem;
+    }
+
+    .section1 h2 {
+        font-weight: 350;
+        font-size: 1.7rem;
+        padding: 0.25rem 1rem 1rem 1rem;
+    }
+
+    .sec-1-img {
+        background-image: url("./assets/sec1-img-2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 10rem;
+        bottom: 0;
+    }
+}
+
+/* section 1 block css ends */
+/* ************************************************************************ */
+
+/* ************************************************************************ */
+/* section 2 block css start */
+.section2 {
+    background-color: rgb(239, 239, 244);
+    width: 100%;
+    height: 40.313rem;
+    text-align: center;
+    padding-top: 3.2rem;
+    margin-bottom: 0.7rem;
+    position: relative;
+}
+
+.section2 h1 {
+    font-size: 3.5rem;
+    font-weight: 540;
+    color: black;
+}
+
+.section2 h2 {
+    color: black;
+    padding-top: 0.25rem;
+    font-weight: 350;
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
+}
+
+.section2 a {
+    text-decoration: none;
+    color: #0162c2;
+    font-size: 1.3rem;
+    font-weight: 350;
+}
+
+.sec2-a:hover {
+    text-decoration: underline;
+}
+
+.sec-2-img {
+    background-image: url("./assets/sec2-iphone.png");
+    width: 100%;
+    height: 370px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-position: center;
+
+    @media (max-width: 768px) {
+        height: 300px;
+
+        min-height: 150px;
+    }
+}
+
+/* section 2 block css ends */
+/* ************************************************************************ */
+
+/* ************************************************************************ */
+/* section 3 block css start */
+.section3 {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 49rem;
+    text-align: center;
+    margin-bottom: 0.7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+#myVideo {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec-3-text {
+    line-height: 2rem;
+    padding-bottom: 3.5rem;
+    z-index: -1;
+}
+
+.sec-3-text h1 {
+    font-size: 3rem;
+}
+
+.sec-3-text h3 {
+    font-weight: 500;
+}
+
+.sec-3-text p {
+    padding-top: 0.5rem;
+    font-weight: 300;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.sec-3-text button {
+    appearance: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    border: none;
+    padding: 0.688rem 1.313rem 0.688rem 1.313rem;
+    font-size: 1rem;
+}
+
+#myBtn {
+    position: absolute;
+    color: white;
+    background-color: #1d1d1f;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    top: 3.7rem;
+    right: 1.6rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+    opacity: 0.7;
+}
+
+@media (max-width: 830px) {
+    .sec-3-text {
+        line-height: 2rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .sec-3-text h1 {
+        font-size: 2rem;
+    }
+
+    .sec-3-text h3 {
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+
+    .sec-3-text p {
+        font-weight: 300;
+        font-size: 1.3rem;
+        padding: 0.5rem 4rem 1rem 4rem;
+    }
+
+    #myBtn {
+        visibility: hidden;
+    }
+}
+
+/* section 3 block css ends */
+/* ************************************************************************ */
+
+/* ************************************************************************ */
+/* section 4 grid block css starts  */
+/* .section4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 8px;
+} */
+.section4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 480px;
+  height: 1500px; */
+    gap: 0.9%;
+    margin: 0.5% 1% 0.5% 0.5%;
+    padding: 0.5% 1% 0.5% 0.5%;
+}
+
+.grid-item {
+    background-color: #fbfbfd;
+    aspect-ratio: 1.25;
+    height: inherit;
+    width: 100%;
+}
+
+/* section 4 content 1  */
+.sec-4-content-1 {
+    text-align: center;
+}
+
+.sec-4-content-1 h1 {
+    color: black;
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.sec-4-content-1 h3 {
+    color: black;
+    font-weight: 380;
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+    padding-top: 0.3rem;
+}
+
+.sec-4-content-1 a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.sec-4-a:hover {
+    text-decoration: underline;
+}
+
+.sec-4-content-1 img {
+    padding-top: 6%;
+    width: 100%;
+}
+
+/* section 4 content 2  */
+.sec-4-content-2 {
+    text-align: center;
+    /* width: 100%;
+  height: 100%; */
+}
+
+.sec-4-content-2 h1 {
+    color: black;
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.sec-4-content-2 h3 {
+    color: black;
+    font-weight: 380;
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+    padding-top: 0.3rem;
+}
+
+.sec-4-content-2 a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.sec-4-content-2 a:hover {
+    text-decoration: underline;
+}
+
+.sec-4-content-2 img {
+    padding-top: 3%;
+    /* height: 24.375rem;
+  width: 21.875rem; */
+    height: 50%;
+    width: 50%;
+}
+
+/* section 4 content 3 */
+.black-sec {
+    background-color: black;
+}
+
+.sec-4-content-3 {
+    text-align: center;
+}
+
+.sec-4-content-3 h1 {
+    color: white;
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.sec-4-content-3 h3 {
+    color: white;
+    font-weight: 380;
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+    padding-top: 0.3rem;
+}
+
+.sec-4-content-3 a {
+    text-decoration: none;
+    color: #2997ff;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.sec-4-content-3 a:hover {
+    text-decoration: underline;
+}
+
+.sec-4-content-3 img {
+    width: 69.1%;
+    position: relative;
+    padding-top: 5%;
+}
+
+@media (min-width: 1400px) {
+    .sec-4-content-3 img {
+        padding-top: 7%;
+    }
+}
+
+/* @media (min-width: 1600px) {
+  .sec-4-content-3 {
+    padding-top: 7%;
+  }
+} */
+
+/* section 4 content 4 */
+
+.sec-4-content-4 {
+    text-align: center;
+}
+
+.sec-4-content-4 h1 {
+    color: black;
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.sec-4-content-4 a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.sec-4-a:hover {
+    text-decoration: underline;
+}
+
+.sec-4-content-4 img {
+    width: 100%;
+    padding-top: 15%;
+}
+
+/* section 4 content 5 */
+.sec-4-content-5 {
+    text-align: center;
+}
+
+.sec-4-content-5 h1 {
+    color: black;
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.sec-4-content-5 h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 380;
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+    padding-top: 0.3rem;
+}
+
+.sec-4-content-5 a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.sec-4-a:hover {
+    text-decoration: underline;
+}
+
+.sec-4-content-5 img {
+    height: 30%;
+    width: 40%;
+    padding-top: 10%;
+}
+
+/* section 4 content 6 */
+.sec-4-content-6 {
+    text-align: center;
+}
+
+.sec-4-content-6 h1 {
+    color: black;
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.sec-logo {
+    color: black;
+    font-size: 2.5rem;
+}
+
+.sec-4-content-6 h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 380;
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+    padding-top: 0.3rem;
+}
+
+.sec-4-content-6 a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.sec-4-a:hover {
+    text-decoration: underline;
+}
+
+.sec-4-content-6 img {
+    padding-top: 0.2rem;
+    width: 100%;
+    height: auto;
+}
+
+/* making sec 4 responsive  */
+@media (max-width: 830px) {
+    .section4 {
+        grid-template-columns: 100%;
+        /* grid-template-rows: 300px; */
+        gap: 12px;
+        padding: 8px;
+        align-items: center;
+        margin: 0;
+    }
+
+    .grid-item {
+        width: 100%;
+        height: inherit;
+        /* height: 420px; */
+    }
+
+    .sec-4-content-1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sec-4-content-2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sec-4-content-3 img {
+        width: 100%;
+        height: auto;
+        /* position: relative;
+    top: 102px; */
+    }
+
+    .sec-4-content-6 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sec-4-content-5 img {
+        width: 50%;
+        height: auto;
+    }
+
+    /* .center {
+    width: 100%;
+  } */
+}
+
+/* section 4 grid block css ends  */
+/* ************************************************************************ */
+
+/* ************************************************************************ */
+.slider-container {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    /* margin-top: 2.6rem; */
+    overflow: hidden;
+    /* margin: 2.6rem 1rem 1rem 1rem; */
+    margin: 1% 0% 2% 2.5%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    /* Take up full width of the viewport */
+    /* max-width: 100%; */
+    /* Ensure it doesn't exceed the width of the viewport */
+    height: 700px;
+    /* Set height to 668px */
+
+    position: relative;
+}
+
+.slide {
+    /* flex: 0 0 100%; */
+    /* width: 100%; */
+    width: 100%;
+    /* Make each slide take up full width */
+    height: 100%;
+    /* Make each slide take up full height of the slider */
+    position: absolute;
+    /* Position slides absolutely within the slider */
+    top: 0;
+    /* Position at the top of the slider */
+    left: 0;
+}
+
+.slide img {
+    width: 100%;
+    /* Make sure images fill their container */
+    height: 100%;
+    /* Make sure images fill their container */
+    object-fit: cover;
+    /* Ensure the images cover the entire slide area */
+}
+
+.slider-nav {
+    text-align: center;
+    margin-top: 20px;
+    display: inline;
+    margin-left: 40%;
+
+
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+
+
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+#playPauseButton {
+    /* color: black; */
+    font-size: 30px;
+    /* border-radius: 50%; */
+    height: 35px;
+    width: 35px;
+    margin-left: 45%;
+    border: 0px solid;
+    background-color: white;
+    text-align: end;
+    cursor: pointer;
+}
+
+/* ************************************************************************ */
+
+/* ************************************************************************ */
+/* footer section css starts  */
+.footer {
+    padding: 0px 22px;
+    background-color: rgb(245, 245, 247);
+    margin-top: 2rem;
+}
+
+.container {
+    font-size: 12px;
+    margin: 0% 15%;
+    padding-top: 1rem;
+}
+
+/* @media (max-width: 1592px) {
+    .footer {
+        margin: 0% 15%;
+    } 
+}*/
+
+@media (max-width: 1396px) {
+    .container {
+        margin: 0% 14%;
+    }
+}
+
+@media (max-width: 1202px) {
+    .container {
+        margin: 0% 13%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .container {
+        margin: 0% 12%;
+    }
+}
+
+@media (max-width: 950px) {
+    .container {
+        margin: 0% 11%;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        margin: 0% 10%;
+    }
+}
+
+@media (max-width: 830px) {
+    .container {
+        margin: 0% 0%;
+    }
+
+    .container {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+.footer-flex {
+    display: flex;
+
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.footer-flex .foot {
+    width: 100%;
+    height: auto;
+}
+
+.para1 {
+    margin: 10px 0px 2px 2px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.56);
+    cursor: pointer;
+}
+
+.para1:hover {
+    text-decoration: underline;
+}
+
+.special1 {
+    margin: 20px 0px 20px 2px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 12px;
+}
+
+/* footer section css ends  */
+/* ************************************************************************ */
